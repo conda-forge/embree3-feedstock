@@ -1,6 +1,6 @@
 {% set name = "embree3" %}
-{% set version = "3.2.0" %}
-{% set sha256 = "9f4fe73dc2b1fc5ff26840d65d87dcba9b5faef70fccb8c231d85437e0a5bf34" %}
+{% set version = "3.2.1" %}
+{% set sha256 = "7ef46acf7639c8024f409cae07be3cc8c618fb5198fe2e071de594d31f693917" %}
 
 package:
   name: {{ name }}
@@ -23,6 +23,7 @@ requirements:
 
   host:
     - tbb
+    - tbb-devel
 
   run:
     - tbb

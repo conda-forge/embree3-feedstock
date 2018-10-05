@@ -5,7 +5,7 @@ mkdir build
 cd build
 
 :: Specify location of TBB
-set "TBB_ROOT=%LIBRARY_PREFIX%"
+set "TBBROOT=%LIBRARY_PREFIX%"
 
 :: Configure
 cmake ../ ^

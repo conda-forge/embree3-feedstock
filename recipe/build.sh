@@ -3,7 +3,7 @@ mkdir build
 cd build
 
 # Specify location of TBB
-export TBB_ROOT=${PREFIX}
+export TBBROOT=${PREFIX}
 
 # Configure
 cmake ../ \

@@ -1,6 +1,6 @@
 {% set name = "embree3" %}
-{% set version = "3.2.1" %}
-{% set sha256 = "7ef46acf7639c8024f409cae07be3cc8c618fb5198fe2e071de594d31f693917" %}
+{% set version = "3.2.2" %}
+{% set sha256 = "f0523819aa24f77608afde3d23ddbeaea88937e3f9fb6a115c23e0e0646c8f5f" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   # upstream supports visual studio 13+
   skip: true  # [win and vc<13]]
 

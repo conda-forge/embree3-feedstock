@@ -10,6 +10,8 @@ source:
   fn: {{ version }}.tar.gz
   url: https://github.com/embree/embree/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - use-conda-forge-ABI.patch
 
 build:
   number: 0

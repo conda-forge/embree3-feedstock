@@ -7,6 +7,7 @@ export TBBROOT=${PREFIX}
 
 # Configure
 cmake ../ \
+      -DEMBREE_IGNORE_CMAKE_CXX_FLAGS=OFF \
       -DCMAKE_INSTALL_PREFIX=${PREFIX} \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DCMAKE_BUILD_TYPE=Release \

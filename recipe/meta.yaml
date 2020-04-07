@@ -1,10 +1,10 @@
 {% set name = "embree3" %}
-{% set version = "3.8.0" %}
-{% set sha256 = "ae42c08fe05672942083c0b272bfa6915b209eb8c76ae53c8948e2f1f7491e68" %}
+{% set version = "3.9.0" %}
+{% set sha256 = "53855e2ceb639289b20448ae9deab991151aa5f0bc7f9cc02f2af4dd6199d5d1" %}
 
 package:
   name: {{ name }}
-  version: "{{ version }}"
+  version: {{ version }}
 
 source:
   fn: {{ version }}.tar.gz

@@ -6,7 +6,7 @@ cd build
 export TBBROOT=${PREFIX}
 
 # Configure
-cmake ../ \
+cmake ${CMAKE_ARGS} ../ \
       -DEMBREE_IGNORE_CMAKE_CXX_FLAGS=OFF \
       -DCMAKE_INSTALL_PREFIX=${PREFIX} \
       -DCMAKE_INSTALL_LIBDIR=lib \

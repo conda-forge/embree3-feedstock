@@ -6,9 +6,9 @@ cd build
 export TBBROOT=${PREFIX}
 
 if [ "${target_platform}" == "osx-arm64" ]; then
-    max_isa = "NEON"
+    max_isa="NEON"
 else
-    max_isa = "AVX2"
+    max_isa="AVX2"
 fi
 
 # Configure

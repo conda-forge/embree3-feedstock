@@ -5,6 +5,12 @@ cd build
 # Specify location of TBB
 export TBBROOT=${PREFIX}
 
+if [ "${target_platform}" == "osx-arm64" ]; then
+    max_isa = "NEON"
+else
+    max_isa = "AVX2"
+fi
+
 # Configure
 cmake ${CMAKE_ARGS} ../ \
       -DEMBREE_IGNORE_CMAKE_CXX_FLAGS=OFF \
@@ -12,7 +18,7 @@ cmake ${CMAKE_ARGS} ../ \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DCMAKE_BUILD_TYPE=Release \
       -DEMBREE_TUTORIALS=OFF \
-      -DEMBREE_MAX_ISA="DEFAULT" \
+      -DEMBREE_MAX_ISA="${max_isa}" \
       -DEMBREE_ISPC_SUPPORT=OFF
 
 # Compile

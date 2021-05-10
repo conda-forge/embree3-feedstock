@@ -12,7 +12,7 @@ cmake ${CMAKE_ARGS} ../ \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DCMAKE_BUILD_TYPE=Release \
       -DEMBREE_TUTORIALS=OFF \
-      -DEMBREE_MAX_ISA="AVX2" \
+      -DEMBREE_MAX_ISA="DEFAULT" \
       -DEMBREE_ISPC_SUPPORT=OFF
 
 # Compile

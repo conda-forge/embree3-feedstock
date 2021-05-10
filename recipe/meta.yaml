@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://embree.github.io/
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE.txt
   summary: High Performance Ray Tracing Kernels
 

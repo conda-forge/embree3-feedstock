@@ -3,7 +3,7 @@ About embree3
 
 Home: https://embree.github.io/
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/embree3-feedstock/blob/master/LICENSE.txt)
 

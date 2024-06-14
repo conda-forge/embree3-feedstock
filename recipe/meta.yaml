@@ -1,6 +1,6 @@
 {% set name = "embree3" %}
-{% set version = "3.13.5" %}
-{% set sha256 = "b8c22d275d9128741265537c559d0ea73074adbf2f2b66b0a766ca52c52d665b" %}
+{% set version = "4.3.2" %}
+{% set sha256 = "dc7bb6bac095b2e7bc64321435acd07c6137d6d60e4b79ec07bb0b215ddf81cb" %}
 
 package:
   name: {{ name }}
@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [linux64]
 

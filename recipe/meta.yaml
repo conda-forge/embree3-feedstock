@@ -14,13 +14,14 @@ source:
     - use-conda-forge-ABI.patch
 
 build:
-  number: 0
+  number: 1
   # upstream supports visual studio 13+
   skip: true  # [win and vc<13]]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [linux64]
 
